@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the CSV data into the DataFrame
-df = pd.read_csv('/Users/shengzhupeng/Desktop/car_data.csv')
+df = pd.read_csv('car_data.csv')
 
 # Set up the sidebar
 st.sidebar.header('Personalize Your Choice')
