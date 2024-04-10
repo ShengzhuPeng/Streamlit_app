@@ -14,13 +14,13 @@ car_name_input = st.sidebar.text_input('Car Name')
 transmission_choice = st.sidebar.multiselect('Transmission Type', ['Manual', 'Automatic'], default=['Manual', 'Automatic'])
 
 # Slider for Selling Price range
-selling_price_range = st.sidebar.slider('Selling Price Range', float(df.Selling_Price.min()), float(df.Selling_Price.max()), (0.0, 20.0))
+selling_price_range = st.sidebar.slider('Price Range', float(df.Selling_Price.min()), float(df.Selling_Price.max()), (0.0, 20.0))
 
 # Slider for Year range
 year_range = st.sidebar.slider('Year Range', int(df.Year.min()), int(df.Year.max()), (2000, 2024))
 
 # Submit button to apply filters
-if st.sidebar.button('Apply Filters'):
+if st.sidebar.button('Submit'):
     # Filtering based on the sidebar options
     filtered_df = df
     
